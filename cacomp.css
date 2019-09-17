@@ -1,0 +1,47 @@
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.btp i{
+    color: white;
+    margin-left: 35%
+}
+.container-rodape {
+	width: 100%;
+	margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer{
+    background: #181818;
+    color: white;
+    padding: 20px;
+}
+.logo-container{
+    width: 35%;
+    padding-left: 5%;
+}
+.footer-tres{
+    width: 20.6666666%;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+}
+.footer-tres h1{
+    font-size: 22px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    
+}
+.footer-tres a:hover{
+    text-decoration: none;
+    transition: 0.2s;
+    color: grey;
+}
+.footer-tres a{
+    font-weight: 400;
+    margin-bottom: 4px
+}
