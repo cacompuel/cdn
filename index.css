@@ -143,7 +143,6 @@ a:hover{
         margin-top: 88vh;
     }
 }
-
 .flex {
 	display: flex;
 }
@@ -151,12 +150,7 @@ a:hover{
 .flex-wrap {
 	flex-wrap: wrap;
 }
-.item {
-	margin: 5px;
-	background: tomato;
-	text-align: center;
-	font-size: 1.5em;
-}
+
 .btp i{
     color: white;
     margin-left: 35%
@@ -174,25 +168,27 @@ a:hover{
 }
 .logo-container{
     width: 35%;
+    padding-left: 5%;
 }
 .footer-tres{
-    width: 21.6666666667%;
+    width: 20.6666666%;
     padding: 10px 10px;
     padding-bottom: 10px;
 }
 .footer-tres h1{
     font-size: 22px;
     padding-bottom: 2px;
+    font-weight: 600;
     
 }
-.container-rodape a:hover{
+.footer-tres a:hover{
     text-decoration: none;
-    transform: scale(1.3);
     transition: 0.2s;
-    
+    color: grey;
 }
-.footer-tres h1:hover{
-    scale: 1.3;
+.footer-tres a{
+    font-weight: 400;
+    margin-bottom: 4px
 }
 
 .btp{
