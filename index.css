@@ -188,7 +188,8 @@ a:hover{
 }
 .footer-tres a{
     font-weight: 400;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    color: white;
 }
 
 .btp{
