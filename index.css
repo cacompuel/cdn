@@ -629,7 +629,7 @@ footer{
     right:0;
     bottom:0;
     background-color:#000;
-    z-index:999; 
+    z-index:999999; 
 }
 #preloader .inner {
     position: absolute;
