@@ -5,7 +5,6 @@
 }
 
 
-
 nav{
     position: fixed;
     top: 0;
@@ -51,7 +50,7 @@ nav ul li a{
     transition: .3s;
 }
 
-nav ul li a.active,
+
 nav ul li a:hover{
     background: #f80181;
     text-decoration: none;
@@ -129,15 +128,30 @@ a:hover{
 }
 .descer{
     background: none;
+    animation: deslizar 1.5s infinite;
+    margin-top: 90vh;
 }
+
+@keyframes deslizar{
+    0%{
+        margin-top: 88vh;
+    }
+    50%{
+        margin-top: 92vh;
+    }
+    100%{
+        margin-top: 88vh;
+    }
+}
+
 footer{
     width: 100%;
     display: flex;
     overflow: hidden;
     padding: 70px 0;
     box-sizing: border-box;
-    background-color: #181818;[]
-    
+    background-color: #181818;
+    bottom: -50px;
 }
 
 .inner-footer{
@@ -197,6 +211,7 @@ footer{
     width: 40px;
     background: #222222;
     margin: 10px;
+    left: -10px;
     border-radius: 30%;
     overflow: hidden;
     color: #f80181;
@@ -291,8 +306,7 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
 
 .btn-png2 a{
 	text-decoration:none; color: black; font-weight: 500px;font-size: 1em}
-/*.btn-png2 a:hover{
-	text-decoration:none; color: grey; font-weight: 500px;font-size: 1em}*/
+
 .titulo{
 	width: 100%;
 	color: white; font-size: 2em;	font-weight: 700; text-align: center;
@@ -362,17 +376,20 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
     display: none;
 }
 
-@media (max-width: 992px){
+#newlater img{
+  width: 100%;  
+}
+
+@media (max-width: 1150px){
     .responsivo{
         display: block;
         width: 100%;
-        height: 60px;
         position: fixed;
         top: 0;
         left: 0;
         padding: 5px 20px;
         box-sizing: border-box;
-        z-index: 1;
+        z-index: 999;
     }
     
     .responsivo .logoheader img{
@@ -448,6 +465,20 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
 	color: white; font-size: 1em;	font-weight: 500; text-align: center; width: 100%; margin-bottom: 4%
 }
 
+.btn-est{
+    height: 50px;
+    width: 20%;
+    float: right;
+    background: #f80181;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-est:hover{
+    height: 45px;
+    transition: 0.2s;
+}
+
 .Identidade {
   display: flex; 
   flex-wrap: wrap;
@@ -460,6 +491,73 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
 	color: white; text-decoration: none;
 }
 
+
+@media (max-width: 728px){
+    
+footer{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #181818;
+    bottom: -50px;
+}
+
+.footer-tres{
+    width: 100%;
+}
+
+.inner-footer{
+    display: flex;
+    margin: 0 auto;
+    width: 1100px;
+    color: white;
+    height: 100%;
+    flex: wrap;
+}
+.inner-footer a:hover{
+    text-decoration: none;
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+.inner-footer .logo-container{
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: flex;
+}
+
+.inner-footer .footer-tres{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 10px;
+    float: left;
+    height: 100%;
+}
+
+.inner-footer .footer-tres:last-child{
+    margin-right: 0;
+}
+
+.inner-footer .footer-tres h1{
+    font-size: 22px;
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.inner-footer .footer-tres a{
+    font-size: 15px;
+    color: white;
+}
+
+.inner-footer .footer-tres.meio{
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    float: left;    
+}
+    
+}
 /*eventos*/
 .cre a{
 	color: white;
@@ -523,4 +621,43 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
 	background:linear-gradient(to right, #00dae7, #ff61b3);
 	border-radius: 10px;
 	margin-bottom: 10px;
+}
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000;
+    z-index:999; 
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.barra {
+  display: inline-block;
+  background:linear-gradient(to right, #f80181, #00dae7);
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 3px;
+  animation: barra 7s ease;
+   
+}
+ 
+@keyframes barra {
+  0% {
+    width: 25px;
+    
+  }
+  16% {
+    width: 80px;
+  }
+  33% {
+    width: 200px;
+  }
+  
 }
