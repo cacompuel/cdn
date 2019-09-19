@@ -1,0 +1,588 @@
+/* CABEÇALHO */
+.btn{
+
+	width: 100%; padding: 3% 4%; float: left; font-family: 'Biko' , sans-serif;font-weight: 400; color: white;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100px;
+   padding: 10px 50px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.black{
+   background: rgba(0,0,0,.8);
+   height: 80px;
+    padding: 10px 100px;
+}
+
+nav .logoheader{
+    float: left;
+}
+
+nav .logoheader img{
+    height: 60px;
+    transition: .5s;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    line-height: 60px;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+
+nav ul li a:hover{
+    background: #f80181;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+.btn-menu{padding: 2% 2% ;float: right; text-align: center; color: white; cursor: pointer; background: none;}
+/* restaurar*/
+*{ 
+	margin:0; 
+	padding:0;
+	font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Biko' , sans-serif;font-weight: 400;
+}
+body{
+	background-color: white;
+}
+a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+    color: white
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+    color: grey;
+}
+a{text-decoration: none;}
+.texto_financas a:hover{text-decoration: none;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+/* Ultimas Noticias*/
+.mapa{
+	text-align: center;	 width: 100%;
+}
+.ultimas{
+	width: 100%; text-align: center; color:white; background: black; margin-top: 5%; }
+.ultimas h1{
+	color:  white; font-size: 4em;	font-weight: 700; text-align: center; width: 100%; 
+}
+/* bandeira */
+.bandeira{
+     width: 100%;
+     height: 100vh;
+    background: cover;
+	 text-align: center;
+     background: url(https://i.imgur.com/5sERec7.png) no-repeat fixed;
+     background-position: center;
+}
+
+/* sobre */
+.infos{
+	background: white; padding: 15%
+}
+.infos h1{
+	color: #f80181; font-size: 3em;	font-weight: 500; text-align: center;
+}
+.infos h2 {
+	color: #f80181; font-size: 3em;	font-weight: 500; text-align: center;
+}
+.infos p {
+	color: #f80181; font-size: 1.2em;	font-weight: 300; text-align: center;
+}
+a{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+.descer{
+    background: none;
+    animation: deslizar 1.5s infinite;
+    margin-top: 90vh;
+}
+
+@keyframes deslizar{
+    0%{
+        margin-top: 88vh;
+    }
+    50%{
+        margin-top: 92vh;
+    }
+    100%{
+        margin-top: 88vh;
+    }
+}
+
+.btp{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    background: #222222;
+    margin: 10px;
+    left: -10px;
+    border-radius: 30%;
+    overflow: hidden;
+    color: #f80181;
+    position: relative;
+    text-align: center;
+	z-index: 1;
+}
+.btp i{
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.2s linear;
+	z-index: 1;
+}
+.btp:hover i{
+    transform: scale(1.3);
+}
+.btp::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #f80181;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btp:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa{
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* sobre */ 
+.sobre{
+	background: white; text-align: center; padding: 4% 5%;width: 100%;
+}
+.sobre h1{
+	color: #f80181; font-size: 2em;	font-weight: 700; text-align: center; width: 100%; margin-bottom: 4%
+
+}
+.sobre h2{
+	color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: center; width: 100%; 
+
+}
+.sobre p{
+color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: left; width: 100%;
+	margin-bottom: 4%
+}
+
+.btn-ai{
+		text-decoration:none; color: white; font-weight: 400px; width: 70%; text-align: center; font-size: 1em; cursor: pointer; padding: 5%; border-radius: 7px; background-color: #00dae7; margin-bottom: 5%; margin-right: 5px; 
+}
+.btn-png{
+	text-decoration:none; color: white; font-weight: 400px;	width: 70%; text-align: center; font-size: 1em; cursor: pointer; padding: 5%; border-radius:7px; background-color: #ff61b3;margin-right: 5px; 
+}
+.btn-fin{
+	text-decoration:none; color: white; font-weight: 400px;	width: 70%; text-align: center; font-size: 1em; cursor: pointer; padding: 5%; border-radius:7px; background-color: #ff61b3;margin-right: 5px; 
+}
+.btn-png a{
+	text-decoration:none; color: white; font-weight: 500px;font-size: 1em}
+
+.btn-png2{
+	text-decoration:none; color: black; font-weight: 400px;	width: 70%; text-align: center; font-size: 1em; cursor: pointer; padding: 5%; border-radius:7px; background-color: white;margin-right: 5px; 
+	margin-bottom: 2.5px;
+}
+.btn-png2:hover{
+	text-decoration:none; font-weight: 400px;	width: 70%; text-align: center; font-size: 1em; cursor: pointer; padding: 5%; border-radius:7px;
+	background: linear-gradient(to right, #f80181, #00dae7); margin-right: 5px; 
+	color: white;
+}
+.texto_financas {
+	font-family: 'Biko' , sans-serif;font-weight: 400;
+}
+
+.texto_financas h2{
+	font-weight: 700;
+}
+
+.btn-png2 a{
+	text-decoration:none; color: black; font-weight: 500px;font-size: 1em}
+
+.titulo{
+	width: 100%;
+	color: white; font-size: 2em;	font-weight: 700; text-align: center;
+}
+.ute p{
+	text-decoration:none; color: white; font-weight: 500px;font-size: 1em;
+}
+.texto-guia{
+
+	width: 100%;
+	color: white; font-size: 1em;	font-weight: 700; text-align: center;
+}
+
+.btn-ai a{
+	text-decoration:none; color: white; font-weight: 500px; font-size: 1em}
+/* guia */
+.g-uia {
+  display: flex;
+  margin-bottom: 50px; 
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  padding: 10%
+}
+
+.texto-guia h1{
+	width: 100%; padding: 3% 4%; float: left; font-family: 'Biko' , sans-serif;font-weight: 400;
+	color: black; font-size: 1.5em;	font-weight: 500; text-align: left; float: left; width: 100%;
+}
+.lin a{
+	text-align: center;margin-top: 10%; 
+}
+/* Ada */
+.ada{
+	 text-align: center; padding: 4% 5%; width: 100%;
+}
+.ada h1{ width: 100%;
+	color: white; font-size: 2em;	font-weight: 700; text-align: center;
+}
+.ada p{
+	color: white; font-size: 1.5em;	font-weight: 500; text-align: left; float: left; width: 100%;
+}
+.ada h3{
+	color: white;
+}
+.est h5{
+	color: white;
+}
+/* Gestão */
+.gest{
+	background: white;  padding: 4% 5%; width: 100%;float: left;
+}
+.ge{
+	width: 100%; text-align: center; margin-bottom: 3%; 
+}
+.inner{padding: 7%}
+.inner h1{color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: center; width: 100%;
+}
+.inner p{color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: center; float: left; width: 100%;}
+.redesmembros{
+	text-align: center; width: 100%;justify-content: center;
+  align-content: center;		
+}
+
+.responsivo{
+    display: none;
+}
+
+#newlater img{
+  width: 100%;  
+}
+
+@media (max-width: 1150px){
+    .responsivo{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 999999;
+    }
+    
+    .responsivo .logoheader img{
+        float: left;
+        height: 50px;
+	    z-index: 999999;
+    }
+    .responsivo .menu{
+        float: right;
+        margin: 0;
+        padding: 0;
+        color: white;
+        cursor: pointer;
+        line-height: 50px;
+        top: 60px;
+	    z-index: 999999;
+    }
+    nav,
+    .black{
+        background: rgb(0,0,0);
+        height: 60px;
+        padding: 0;
+     }
+     
+     nav .logoheader{
+         display: none;
+     }
+     nav ul{
+         position: absolute;
+         width: 100%;
+         top: 60px;
+         left: 0;
+         background: black;
+         float: none;
+         display: none;
+     }
+     
+     nav ul.active{
+        display: block;
+     }
+
+     nav ul li{
+         width: 100%;
+     }
+     nav ul li a{
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 40px !important;
+    }
+}
+
+.title h1{
+	color: white; font-size: 2em;	font-weight: 700; text-align: center; width: 100%;
+}
+
+
+.container {
+  display: flex;
+  margin-bottom: 50px; 
+  margin-right: 50px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+ z-index: 0; 
+}
+.membro{ padding: 5%
+}
+.membro p{
+	color: white; font-size: 1.5em;	font-weight: 500; text-align: center; width: 100%; margin-bottom: 4%
+}
+.membro h1{
+	color: white; font-size: 1em;	font-weight: 500; text-align: center; width: 100%; margin-bottom: 4%
+}
+
+.btn-est{
+    height: 50px;
+    width: 20%;
+    float: right;
+    background: #f80181;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-est:hover{
+    height: 45px;
+    transition: 0.2s;
+}
+
+.Identidade {
+  display: flex; 
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  padding: 3% 3%;
+}
+.btn-secundary{
+	color: white; text-decoration: none;
+}
+
+/*eventos*/
+.cre a{
+	color: white;
+	padding: 2% 2%;
+	font-size: 20px
+}
+.cre a:hover{
+	color: #00dae7;
+}
+.Eventos{
+  display: flex;
+  margin-bottom: 50px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 5%;
+}
+.role p{
+	color:   #f80181; font-size: 1.5em;	font-weight: 500; text-align: center; float: left; width: 100%;
+	margin-bottom: 4%}
+.role h1{
+	color:  #0ccdde; font-size: 2em;	font-weight: 700; text-align: center; width: 100%; margin-bottom: 4%
+}
+.role{
+	background: white; text-align: center; padding: 6% 5%;width: 100%; border-radius: #dedede; }
+.ute{
+	background: black; text-align: center; padding: 6% 5%;width: 100%; border-radius: #dedede;
+}
+
+.titulo h1{
+	color:  #f80181; font-size: 4em;	font-weight: 700; text-align: center; width: 100%; 
+}
+.titulofin h1{
+	color:  #158307; font-size: 4em;	font-weight: 700; text-align: center; width: 100%; 
+}
+.redes{
+	text-align: center;
+}
+
+
+.carousel-item{
+	align-content: center; 
+		  justify-content: center;
+		  text-align: center;
+}
+.homer{
+			width: 60%; align-content: center; 
+			justify-content: center;
+			text-align: center;
+			margin-left: 20%;margin-right: 20%
+
+}
+.principal{
+	background: url(background.png);
+}
+.solido{
+	align-content: center;
+	width:25%;
+	margin-left: 37.5%;
+	height:15px;
+	background:linear-gradient(to right, #00dae7, #ff61b3);
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#000;
+    z-index:999999; 
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.barra {
+  display: inline-block;
+  background:linear-gradient(to right, #f80181, #00dae7);
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 3px;
+  animation: barra 7s ease;
+   
+}
+ 
+@keyframes barra {
+  0% {
+    width: 25px;
+    
+  }
+  16% {
+    width: 80px;
+  }
+  33% {
+    width: 200px;
+  }
+  
+}
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.btp i{
+    color: white;
+    margin-left: 35%;
+	
+}
+.container-rodape {
+	width: 100%;
+	margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+#footer{
+    background: #181818;
+    color: white;
+    padding: 20px;
+}
+.logo-container{
+    width: 35%;
+    padding-left: 5%;
+}
+.footer-tres{
+    width: 20.6666666%;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+}
+.footer-tres h1{
+    font-size: 22px;
+    padding-bottom: 2px;
+    font-weight: 600;
+    
+}
+.footer-tres a:hover{
+    text-decoration: none;
+    transition: 0.2s;
+    color: grey;
+}
+.footer-tres a{
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: white;
+}
