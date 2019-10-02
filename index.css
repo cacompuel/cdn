@@ -332,7 +332,9 @@ color: #f80181; font-size: 1.5em;	font-weight: 500; text-align: left; float: lef
         box-sizing: border-box;
         z-index: 999999;
     }
-    
+    #preloader{
+	z-index: 99999999999999999;
+	}
     .responsivo .logoheader img{
         float: left;
         height: 50px;
